@@ -78,13 +78,14 @@ ul.social {
 .hello {
     width: 100%;
     position: absolute;
-    bottom: 0; left: 25px;
+    bottom: 0;
+    padding-left: 2px;
 }
 
 .bottom-portion {
     width: 90%;
     @include flexbox();
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 

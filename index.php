@@ -39,7 +39,11 @@
 				</div>
 			</div>
 		</div> <!-- End Hello -->
-
-
+	<!-- Javascript -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/fittext.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+  	$(".headline").fitText();
+	</script>
 	</body>
 </html>

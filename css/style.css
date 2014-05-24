@@ -49,8 +49,6 @@ a {
 
 .headline {
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 10em;
   font-weight: 700; }
 
 .typed {
@@ -143,7 +141,7 @@ ul.social {
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 25px; }
+  padding-left: 2px; }
 
 .bottom-portion {
   width: 90%;
@@ -152,7 +150,7 @@ ul.social {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between; }
 
 .name {
