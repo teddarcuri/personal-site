@@ -60,6 +60,18 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
+.button {
+  color: #fff;
+  border: solid 2px #b45649;
+  border-radius: 5px;
+  padding: 15px 35px;
+  line-height: 7em;
+  margin-right: 15px;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .button:hover {
+    background: #b45649; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -68,17 +80,6 @@ a {
 body {
   font-family: 'Proxima Nova', sans-serif;
   background: #0f0f0f; }
-
-.button {
-  color: #fff;
-  border: solid 2px #b45649;
-  border-radius: 5px;
-  padding: 15px 35px;
-  line-height: 5em;
-  margin-right: 15px;
-  text-transform: uppercase; }
-  .button:hover {
-    background: #b45649; }
 
 nav {
   position: fixed;
@@ -118,9 +119,11 @@ ul.navigation {
       font-size: 1em;
       display: inline-block;
       color: #fff;
-      padding: 20px 40px; }
+      padding: 20px;
+      margin: 0px 20px;
+      border-bottom: solid 2px transparent; }
       ul.navigation li a:hover {
-        color: #b45649; }
+        border-bottom: solid 2px #b45649; }
 
 ul.social {
   height: 100%;
@@ -139,10 +142,11 @@ ul.social {
 .hello {
   width: 100%;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  left: 25px; }
 
 .bottom-portion {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -155,8 +159,11 @@ ul.social {
   color: #b45649;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 15em;
+  font-size: 20em;
   font-weight: 700; }
+  .name .me-with-e {
+    margin: 45px -100px 0px -155px;
+    vertical-align: top; }
 
 .call-to-action {
   padding: 50px;

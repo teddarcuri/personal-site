@@ -29,7 +29,7 @@
 			<h1 class="headline">Hello, my name is</h1>
 
 			<div class="bottom-portion">
-				<h1 class="name">Tedd</h1>
+				<h1 class="name">T<img class="me-with-e" src="img/me-with-e.png" alt="" />dd</h1>
 				<div class="call-to-action">
 					<center>
 					<div class="typed">I design. I code. I solve Problems</div>

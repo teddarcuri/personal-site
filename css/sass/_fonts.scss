@@ -7,7 +7,6 @@ a {
 }
 
 // Semantic Type
-
 .headline {
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -21,5 +20,18 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
 
+.button {
+    color: #fff;
+    border: solid 2px $salmon;
+    border-radius: 5px;
+    padding: 15px 35px;
+    line-height: 7em;
+    margin-right: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background: $salmon;
+    }
 }
