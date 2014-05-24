@@ -18,9 +18,9 @@
 			</ul>
 
 			<ul class="social">
-				<li><img src="img/github.svg" alt="" /></li>
-				<li><img src="img/github.svg" alt="" /></li>
-				<li><img src="img/github.svg" alt="" /></li>
+				<li><img src="img/github.svg" alt="Github" /></li>
+				<li><img src="img/twitter.svg" alt="Twitter" /></li>
+				<li><img src="img/github.svg" alt="LinkedIn" /></li>
 			</ul>
 		</nav> <!-- End Nav -->
 
@@ -32,7 +32,7 @@
 				<h1 class="name">T<img class="me-with-e" src="img/me-with-e.png" alt="" />dd</h1>
 				<div class="call-to-action">
 					<center>
-					<div class="typed">I design. I code. I solve Problems</div>
+					<div class="typed"></div>
 					<a class="button">A little about me</a>
 					<a class="button">See my work</a>
 					</center>
@@ -42,8 +42,18 @@
 	<!-- Javascript -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/fittext.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/typed.js" type="text/javascript" charset="utf-8"></script>
 	<script>
-  	$(".headline").fitText();
+
+  	  $(".headline").fitText();
+
+		$(function(){
+		    $(".typed").typed({
+		    strings: ["I Design. I Code. I solve Problems."],
+		    typeSpeed: 100
+		    });
+		});
+
 	</script>
 	</body>
 </html>

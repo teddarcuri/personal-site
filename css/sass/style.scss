@@ -11,6 +11,9 @@
 // Fonts
 @import "fonts";
 
+// Vendor Libraries
+@import "typed";
+
 // Global structures
 *, *:before, *:after {
     @include box-sizing(border-box);
