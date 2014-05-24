@@ -20,7 +20,7 @@
 			<ul class="social">
 				<li><img src="img/github.svg" alt="Github" /></li>
 				<li><img src="img/twitter.svg" alt="Twitter" /></li>
-				<li><img src="img/github.svg" alt="LinkedIn" /></li>
+				<li><img src="img/linkedin.svg" alt="LinkedIn" /></li>
 			</ul>
 		</nav> <!-- End Nav -->
 
@@ -52,7 +52,7 @@
 
 		$(function(){
 		    $(".typed").typed({
-		    strings: ["I Design. I Code. I solve Problems."],
+		    strings: ["I Design. I Code. I Solve Problems."],
 		    typeSpeed: 100
 		    });
 		});

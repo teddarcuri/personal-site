@@ -56,7 +56,8 @@ a {
   color: #fff;
   font-size: 1.7em;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
 
 .button {
   color: #fff;
@@ -66,9 +67,15 @@ a {
   line-height: 7em;
   margin-right: 15px;
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 0.8em; }
   .button:hover {
     background: #b45649; }
+  @media (max-width: 1200px) {
+    .button {
+      display: block;
+      line-height: 2em;
+      margin: 15px 0px; } }
 
 #typed-cursor {
   opacity: 1;
@@ -180,10 +187,18 @@ ul.social {
   width: 100%;
   position: absolute;
   bottom: 0;
-  padding-left: 2px; }
+  padding-left: 50px; }
+  @media (max-width: 1200px) {
+    .hello {
+      width: 90%;
+      position: relative;
+      margin: auto;
+      padding: 0px;
+      text-align: center;
+      top: 125px; } }
 
 .bottom-portion {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -191,9 +206,16 @@ ul.social {
   display: flex;
   align-items: flex-start;
   justify-content: space-between; }
+  @media (max-width: 1024px) {
+    .bottom-portion {
+      flex-direction: column;
+      justify-content: center; } }
 
 .name-container {
   width: 50%; }
+  @media (max-width: 1024px) {
+    .name-container {
+      width: 100%; } }
 
 .name {
   color: #b45649;
@@ -201,11 +223,14 @@ ul.social {
   font-size: 20em;
   font-weight: 700; }
   .name .me-with-e {
-    width: 45%;
-    margin: 5% -10% 0px -12%;
+    width: 47%;
+    margin: 4.75% -10% 0px -12%;
     vertical-align: top; }
 
 .call-to-action {
   padding: 50px;
   height: 100%;
   width: 50%; }
+  @media (max-width: 1024px) {
+    .call-to-action {
+      width: 100% !important; } }
