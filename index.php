@@ -22,9 +22,24 @@
 				<li><img src="img/github.svg" alt="" /></li>
 				<li><img src="img/github.svg" alt="" /></li>
 			</ul>
-		</nav>
+		</nav> <!-- End Nav -->
 
 		<!-- Hello, My Name Is -->
+		<div class="hello">
+			<h1 class="headline">Hello, my name is</h1>
+
+			<div class="bottom-portion">
+				<h1 class="name">Tedd</h1>
+				<div class="call-to-action">
+					<center>
+					<div class="typed">I design. I code. I solve Problems</div>
+					<a class="button">A little about me</a>
+					<a class="button">See my work</a>
+					</center>
+				</div>
+			</div>
+		</div> <!-- End Hello -->
+
 
 	</body>
 </html>

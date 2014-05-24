@@ -21,53 +21,93 @@ body {
     background: $slate;
 }
 
+.button {
+    color: #fff;
+    border: solid 2px $salmon;
+    border-radius: 5px;
+    padding: 15px 35px;
+    line-height: 5em;
+    margin-right: 15px;
+    text-transform: uppercase;
+    &:hover {
+        background: $salmon;
+    }
+}
+
 nav {
     position: fixed;
     width: 100%; height: $nav-height;
     @include flexbox();
     align-items: center;
     justify-content: space-between;
+} // End Nav
 
-    ul.navigation {
+
+ul.navigation {
+    height: 100%;
+    @include flexbox();
+    align-items: center;
+
+    .logo {
+        height: 100%; width: $nav-height;
+        background: url(../img/logo.svg) no-repeat center center;
+        background-size: 50px;
+    }
+
+    li {
         height: 100%;
+        top: 0px;
         @include flexbox();
         align-items: center;
 
-        .logo {
-            height: 100%; width: $nav-height;
-            background: url(../img/logo.svg) no-repeat center center;
-            background-size: 50px;
-        }
-
-        li {
-            height: 100%;
-            top: 0px;
-            @include flexbox();
-            align-items: center;
-
-            a {
-                font-size: 1em;
-                display: inline-block;
-                color: #fff;
-                padding: 20px 40px;
-                &:hover {
-                    color: $salmon;
-                }
-            }
-        }
-    } // End ul.navigation
-
-    ul.social {
-        height: 100%;
-        @include flexbox();
-        align-items: center;
-        padding-right: 10px;
-        li {
-            padding: 0px 10px;
-            img {
-                height: 30px;
+        a {
+            font-size: 1em;
+            display: inline-block;
+            color: #fff;
+            padding: 20px 40px;
+            &:hover {
+                color: $salmon;
             }
         }
     }
+} // End ul.navigation
 
-} // End Nav
+ul.social {
+    height: 100%;
+    @include flexbox();
+    align-items: center;
+    padding-right: 10px;
+    li {
+        padding: 0px 10px;
+        img {
+            height: 30px;
+        }
+    }
+}
+
+// HELLO MY NAME IS
+.hello {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-portion {
+    width: 100%;
+    @include flexbox();
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    color: $salmon;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 15em;
+    font-weight: 700;
+}
+
+.call-to-action {
+    padding: 50px;
+    height: 100%;
+}
