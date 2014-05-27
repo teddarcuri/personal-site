@@ -2,6 +2,8 @@
 	<head>
 		<title>Tedd Arcuri | Web Designer &amp; Developer</title>
 
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="/css/style.css" type="text/css" charset="utf-8">
 	</head>
@@ -33,11 +35,9 @@
 					<h1 class="name">T<img class="me-with-e" src="img/me-with-e.png" alt="" />dd</h1>
 				</div>
 				<div class="call-to-action">
-					<center>
-					<div class="typed"></div>
+					<span class="typed"><span id="typed-cursor"></span></span><br />
 					<a class="button">A little about me</a>
 					<a class="button">See my work</a>
-					</center>
 				</div>
 			</div>
 		</div> <!-- End Hello -->
@@ -52,8 +52,8 @@
 
 		$(function(){
 		    $(".typed").typed({
-		    strings: ["I Design. I Code. I Solve Problems."],
-		    typeSpeed: 100
+		    	strings: ["I Design. I Code. I Solve Problems"],
+		    	typeSpeed: 100
 		    });
 		});
 

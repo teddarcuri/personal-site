@@ -54,10 +54,11 @@ a {
 
 .typed {
   color: #fff;
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2em; }
+  letter-spacing: 0.2em;
+  text-align: left !important; }
 
 .button {
   color: #fff;
@@ -78,6 +79,8 @@ a {
       margin: 15px 0px; } }
 
 #typed-cursor {
+  color: #fff;
+  font-size: 2em;
   opacity: 1;
   font-weight: 100;
   -webkit-animation: blink 0.7s infinite;
@@ -224,7 +227,7 @@ ul.social {
   font-weight: 700; }
   .name .me-with-e {
     width: 47%;
-    margin: 4.75% -10% 0px -12%;
+    margin: 4.70% -10% 0px -12%;
     vertical-align: top; }
 
 .call-to-action {
