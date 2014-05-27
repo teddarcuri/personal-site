@@ -4,6 +4,10 @@
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 
+		<!-- Typekit Fonts -->
+		<script type="text/javascript" src="//use.typekit.net/tdf6ubl.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="/css/style.css" type="text/css" charset="utf-8">
 	</head>
