@@ -32,6 +32,6 @@
     @media (max-width: 650px)  { @content; }
   }
   @else {
-    @media ($point)  { @content; }
+    @media (max-width: $point + "px")  { @content; }
   }
 }

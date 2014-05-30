@@ -54,7 +54,7 @@ a {
 
 .typed {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -62,14 +62,13 @@ a {
 
 .button {
   color: #fff;
-  border: solid 2px #b45649;
+  border: solid 3px #b45649;
   border-radius: 5px;
   padding: 15px 35px;
   line-height: 7em;
   margin-right: 15px;
   text-transform: uppercase;
-  cursor: pointer;
-  font-size: 0.8em; }
+  cursor: pointer; }
   .button:hover {
     background: #b45649; }
   @media (max-width: 1200px) {
@@ -78,55 +77,21 @@ a {
       line-height: 2em;
       margin: 15px 0px; } }
 
-#typed-cursor {
-  color: #fff;
-  font-size: 2em;
-  opacity: 1;
-  font-weight: 100;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  -ms-animation: blink 0.7s infinite;
-  -o-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
-
-@keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Proxima Nova', sans-serif;
-  background: #0f0f0f; }
+  font-family: 'proxima-nova', sans-serif;
+  background: #0f0f0f;
+  font-size: 18px; }
+  @media (max-width: 1400px) {
+    body {
+      font-size: 16px; } }
+  @media (max-width: 900px) {
+    body {
+      font-size: 14px; } }
 
 nav {
   position: fixed;
@@ -138,7 +103,13 @@ nav {
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: flex-start; }
+
+.logo {
+  height: 100%;
+  width: 85px;
+  background: url(../img/logo.svg) no-repeat center center;
+  background-size: 50px; }
 
 ul.navigation {
   height: 100%;
@@ -147,12 +118,11 @@ ul.navigation {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center; }
-  ul.navigation .logo {
-    height: 100%;
-    width: 85px;
-    background: url(../img/logo.svg) no-repeat center center;
-    background-size: 50px; }
+  align-items: center;
+  flex-grow: 1; }
+  @media (max-width: 1024px) {
+    ul.navigation {
+      display: none; } }
   ul.navigation li {
     height: 100%;
     top: 0px;
@@ -181,10 +151,13 @@ ul.social {
   display: flex;
   align-items: center;
   padding-right: 10px; }
+  @media (max-width: 1024px) {
+    ul.social {
+      display: none; } }
   ul.social li {
     padding: 0px 10px; }
     ul.social li img {
-      height: 30px; }
+      height: 25px; }
 
 .hello {
   width: 100%;
@@ -207,8 +180,7 @@ ul.social {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
+  align-items: stretch; }
   @media (max-width: 1024px) {
     .bottom-portion {
       flex-direction: column;
@@ -227,12 +199,19 @@ ul.social {
   font-weight: 700; }
   .name .me-with-e {
     width: 45%;
-    margin: 4.70% -11% 0 -13%;
+    margin: 4.7% -11% 0 -12%;
     vertical-align: top; }
 
 .call-to-action {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 50px;
-  height: 100%;
   width: 50%; }
   @media (max-width: 1024px) {
     .call-to-action {

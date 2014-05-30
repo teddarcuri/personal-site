@@ -15,8 +15,9 @@
 
 		<!-- Navigation -->
 		<nav>
+			<a class="logo"></a>
+
 			<ul class="navigation">
-				<a class="logo"></a>
 				<li><a href="">Me, The Person</a></li>
 				<li><a href="">My Work</a></li>
 				<li><a href="">(Some Of) My Thoughts</a></li>
@@ -32,16 +33,17 @@
 
 		<!-- Hello, My Name Is -->
 		<div class="hello">
-			<h1 class="headline">Hello, my name is</h1>
-
+			<h1 class="headline"></h1>
 			<div class="bottom-portion">
 				<div class="name-container">
 					<h1 class="name">T<img class="me-with-e" src="img/me-with-e.png" alt="" />dd</h1>
 				</div>
 				<div class="call-to-action">
-					<span class="typed"><span id="typed-cursor"></span></span><br />
+					<span class="typed">I Design. I Code. I Solve Problems</span><br />
+					<center>
 					<a class="button">A little about me</a>
 					<a class="button">See my work</a>
+					</center>
 				</div>
 			</div>
 		</div> <!-- End Hello -->
@@ -55,8 +57,8 @@
 		$(".name").fitText(0.3);
 
 		$(function(){
-		    $(".typed").typed({
-		    	strings: ["I Design. I Code. I Solve Problems"],
+		    $(".headline").typed({
+		    	strings: ["Hello, my name is"],
 		    	typeSpeed: 100
 		    });
 		});

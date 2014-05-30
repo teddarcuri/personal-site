@@ -11,17 +11,21 @@
 // Fonts
 @import "fonts";
 
-// Vendor Libraries
-@import "typed";
-
 // Global structures
 *, *:before, *:after {
     @include box-sizing(border-box);
 }
 
 body {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     background: $slate;
+    font-size: 18px;
+    @include bp(1400) {
+        font-size: 16px;
+    }
+    @include bp(900) {
+        font-size: 14px;
+    }
 }
 
 nav {
@@ -29,19 +33,24 @@ nav {
     width: 100%; height: $nav-height;
     @include flexbox();
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 } // End Nav
 
+
+.logo {
+    height: 100%; width: $nav-height;
+    background: url(../img/logo.svg) no-repeat center center;
+    background-size: 50px;
+}
 
 ul.navigation {
     height: 100%;
     @include flexbox();
     align-items: center;
+    flex-grow: 1;
 
-    .logo {
-        height: 100%; width: $nav-height;
-        background: url(../img/logo.svg) no-repeat center center;
-        background-size: 50px;
+    @include bp(beta) {
+        display: none;
     }
 
     li {
@@ -69,10 +78,15 @@ ul.social {
     @include flexbox();
     align-items: center;
     padding-right: 10px;
+
+    @include bp(beta) {
+        display: none;
+    }
+
     li {
         padding: 0px 10px;
         img {
-            height: 30px;
+            height: 25px;
         }
     }
 }
@@ -96,8 +110,7 @@ ul.social {
 .bottom-portion {
     width: 100%;
     @include flexbox();
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: stretch;
     @include bp(beta) {
         flex-direction: column;
         justify-content: center;
@@ -119,14 +132,18 @@ ul.social {
 
     .me-with-e {
         width: 45%;
-        margin: 4.70% -11% 0 -13%;
+        margin: 4.7% -11% 0 -12%;
         vertical-align: top;
     }
 }
 
 .call-to-action {
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 50px;
-    height: 100%; width: 50%;
+    width: 50%;
     @include bp(beta) {
         width: 100% !important;
     }

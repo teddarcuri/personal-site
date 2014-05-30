@@ -15,7 +15,7 @@ a {
 
 .typed {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -24,14 +24,13 @@ a {
 
 .button {
     color: #fff;
-    border: solid 2px $salmon;
+    border: solid 3px $salmon;
     border-radius: 5px;
     padding: 15px 35px;
     line-height: 7em;
     margin-right: 15px;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 0.8em;
     &:hover {
         background: $salmon;
     }
