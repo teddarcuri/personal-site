@@ -9,7 +9,7 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 		<!-- Stylesheet -->
-		<link rel="stylesheet" href="/css/style.css" type="text/css" charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
 	</head>
 	<body>
 
@@ -20,7 +20,6 @@
 			<ul class="navigation">
 				<li><a href="">Me, The Person</a></li>
 				<li><a href="">My Work</a></li>
-				<li><a href="">(Some Of) My Thoughts</a></li>
 				<li><a href="">Contact Me</a></li>
 			</ul>
 
@@ -54,7 +53,7 @@
 	<script>
 
   	  $(".headline").fitText();
-		$(".name").fitText(0.3);
+	  $(".name").fitText(0.3);
 
 		$(function(){
 		    $(".headline").typed({

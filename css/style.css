@@ -41,6 +41,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+#typed-cursor {
+  color: #fff;
+  font-size: 2em;
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
 h1 {
   color: #fff; }
 
@@ -57,7 +98,6 @@ a {
   font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
   text-align: left !important; }
 
 .button {
@@ -109,7 +149,25 @@ nav {
   height: 100%;
   width: 85px;
   background: url(../img/logo.svg) no-repeat center center;
-  background-size: 50px; }
+  background-size: 50px;
+  border-radius: 200%;
+  cursor: pointer;
+  border: solid 2px transparent;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px); }
+  .logo:hover {
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+    transform: translateY(-7px);
+    border: solid 3px #b45649; }
 
 ul.navigation {
   height: 100%;
@@ -140,6 +198,7 @@ ul.navigation {
       margin: 0px 20px;
       border-bottom: solid 2px transparent; }
       ul.navigation li a:hover {
+        border-radius: 20px;
         border-bottom: solid 2px #b45649; }
 
 ul.social {
@@ -212,7 +271,8 @@ ul.social {
   align-items: center;
   flex-direction: column;
   padding: 50px;
-  width: 50%; }
+  width: 50%;
+  position: relative; }
   @media (max-width: 1024px) {
     .call-to-action {
       width: 100% !important; } }
